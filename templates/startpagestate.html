@@ -1,0 +1,192 @@
+<!-- this used to be index.html, downloaded from bootstrap -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+  /* Dropdown Button */
+.dropbtn {
+background-color: #4CAF50;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+position: relative;
+display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+      body, html {
+        height: 100%;
+      }
+      .bg {
+        background-image: url("{% static 'startpage/images/start_page_bkgd.jpg' %}");
+
+        background-position: center;
+        background-repeat: repeat-y;
+        background-size: cover;
+        font-size: 1em;
+        text-shadow: 0px 0px;
+
+      }
+      .bsize {
+        font-size: 1.0em;
+        outline-color: 2px solid #000000
+      }
+
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>NPS: Park Page</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  <link
+
+</head>
+
+<body>
+    <!-- Page Content -->
+  <div class="container bg">
+
+    <!-- Jumbotron Header -->
+    <div class="bg">
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Welcome to NPS Virtual Kiosk!</h1>
+
+      <p class="lead"> <br /> <br />Search for national parks belows by state or park code</p>
+        <div class="dropdown">
+          <button class="dropdown-toggle btn-info bsize" style="height:40px size=8" required="required">Search by <b><u>state</u></b></button>
+          <div class="dropdown-content">
+            <a href="/startstate/">state</a>
+            <a href="/startpark/">park code</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-toggle force-scroll btn-info bsize" style="height:40px" required="required">Choose state</button>
+          <div class="dropdown-content">
+            <a href="/searchParks2/al/">Alabama</a>
+            <a href="/searchParks2/ak/">Alaska</a>
+            <a href="/searchParks2/az/">Arizona</a>
+            <a href="/searchParks2/ar/">Arkansas</a>
+            <a href="/searchParks2/ca/">California</a>
+            <a href="/searchParks2/co/">Colorado</a>
+            <a href="/searchParks2/ct/">Connecticut</a>
+            <a href="/searchParks2/de/">Delaware</a>
+            <a href="/searchParks2/fl/">Florida</a>
+            <a href="/searchParks2/ga/">Georgia</a>
+            <a href="/searchParks2/hi/">Hawaii</a>
+            <a href="/searchParks2/id/">Idaho</a>
+            <a href="/searchParks2/il/">Illinois</a>
+            <a href="/searchParks2/in/">Indiana</a>
+            <a href="/searchParks2/ia/">Iowa</a>
+            <a href="/searchParks2/ks/">Kansas</a>
+            <a href="/searchParks2/ky/">Kentucky</a>
+            <a href="/searchParks2/la/">Louisiana</a>
+            <a href="/searchParks2/me/">Maine</a>
+            <a href="/searchParks2/md/">Maryland</a>
+            <a href="/searchParks2/ma/">Massachusetts</a>
+            <a href="/searchParks2/mi/">Michigan</a>
+            <a href="/searchParks2/mn/">Minnesota</a>
+            <a href="/searchParks2/ms/">Mississippi</a>
+            <a href="/searchParks2/mo/">Missouri</a>
+            <a href="/searchParks2/mt/">Montana</a>
+            <a href="/searchParks2/ne/">Nebraska</a>
+            <a href="/searchParks2/nv/">Nevada</a>
+            <a href="/searchParks2/nh/">New Hampshire</a>
+            <a href="/searchParks2/nj/">New Jerset</a>
+            <a href="/searchParks2/nm/">New Mexico</a>
+            <a href="/searchParks2/ny/">New York</a>
+            <a href="/searchParks2/nc/">North Carolina</a>
+            <a href="/searchParks2/nd/">North Dakota</a>
+            <a href="/searchParks2/oh/">Ohio</a>
+            <a href="/searchParks2/ok/">Oklahoma</a>
+            <a href="/searchParks2/or/">Oregon</a>
+            <a href="/searchParks2/pa/">Pennsylvania</a>
+            <a href="/searchParks2/ri/">Rhode Island</a>
+            <a href="/searchParks2/sc/">South Carolina</a>
+            <a href="/searchParks2/sd/">South Dakota</a>
+            <a href="/searchParks2/tn/">Tennessee</a>
+            <a href="/searchParks2/tx/">Texas</a>
+            <a href="/searchParks2/ut/">Utah</a>
+            <a href="/searchParks2/vt/">Vermont</a>
+            <a href="/searchParks2/va/">Virginia</a>
+            <a href="/searchParks2/wa/">Washington</a>
+            <a href="/searchParks2/wv/">West Virginia</a>
+            <a href="/searchParks2/wi/">Wisconsin</a>
+            <a href="/searchParks2/wy/">Wyoming</a>
+          </div>
+        </div>
+    </header>
+    <div class="jumbotron my-4">
+
+      <p class="lead">Search Results: </p>
+      <ul>
+
+        {% for result_item in search_results %}
+          <li> {{result_item.content}}
+            <form action="/setUpPark/{{result_item.parkcode}}/"
+                  style="display: inline;"
+                  method="post">{% csrf_token %}
+              <input type="submit" value="Link" class="btn btn-link"/>
+
+            </form>
+          </li>
+        {% endfor %}
+      </ul>
+
+
+    </div>
+    </div>
+
+
+  <!-- /.container -->
+</body>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; - 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
